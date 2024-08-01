@@ -21,7 +21,7 @@ export default function BoarderInfoPage() {
   useEffect(() => {
     const fetchTenants = async () => {
       try {
-        const response = await fetch('http://192.168.8.102:8000/api/tenants/');
+        const response = await fetch('http://127.0.0.1:8000/api/tenants/');
         const data = await response.json();
         setTenants(data);
       } catch (error) {
